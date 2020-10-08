@@ -26,14 +26,18 @@ public class Main {
     for(int i = 0; i < NUM_INT; i++){
       integer[i] = input.nextInt();
     }
+    // create a variable for search
+    int searchBig = integer[0];
 
-    int bigNumber = 0;
-
-    for(int i = 0; i < NUM_INT; i++){
-      if(bigNumber > integer[i]){
-        System.out.println("yuhh");
+    // use for loop to go through index to search for biggest number 
+    for( int i = 0; i < NUM_INT; i++){
+      if(searchBig < integer[i]){
+        searchBig = integer[i];
       }
-    }
+    }  
+    // tell use
+    System.out.println("The largest number is " + searchBig);
+  
     
 
     
